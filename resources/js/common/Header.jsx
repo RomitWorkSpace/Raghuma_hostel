@@ -1,6 +1,6 @@
 import React, { useState, useEffect  } from 'react'
 import { Link } from 'react-router-dom'
-
+import Logo from 'imgPath/RaghumaLogo.png'
 
 
 const Header = () => {
@@ -63,7 +63,7 @@ useEffect(() => {
   return (
     <>
     <header className='header_area'>
-    <div className='container-fluid header-top p-2' style={{backgroundColor:'rgb(13 29 108)',color:'#ccc'}}>
+    <div className='container-fluid header-top p-2' style={{backgroundColor:'#EB2026', color:'#fff'}}>
         <div className='container'>
             <div className='row'>
                 <div className='col-md-3'>+91-8178126122 | admin@npia.in</div>
@@ -75,7 +75,7 @@ useEffect(() => {
 
       <Link to="/" className="logo d-flex align-items-center">
         
-        <img src="" alt="Raghuma Logo" />
+        <img src={ Logo } alt="Raghuma Logo" />
       </Link>
       <div className="" style={{zIndex:'9999'}} onClick={() => handleNav()}>
       <i className={ clicked ? "mobile-nav-toggle mobile-nav-show bi bi-x" : "mobile-nav-toggle mobile-nav-show bi bi-list"}></i>
