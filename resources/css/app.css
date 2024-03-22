@@ -1,0 +1,13 @@
+.footer{
+    background-color: #eee;
+}
+
+.primary-clr{
+    color: #EB2026 !important;
+}
+.clr-black{
+    color:#111;
+}
+.footer-link >a{
+    color:#111 !important;
+}
