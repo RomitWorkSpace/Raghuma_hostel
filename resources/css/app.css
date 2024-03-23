@@ -8,6 +8,47 @@
 .clr-black{
     color:#111;
 }
+.clr-white{
+    color:#fff;
+}
+.bg-raghuma{
+    background-color:#EB2026;
+}
 .footer-link >a{
     color:#111 !important;
+}
+.lily-script{
+    font-family: lily script one;
+}
+
+.text-justify{
+    text-align: justify;
+}
+.bold{
+    font-weight:800;
+}
+.btn-raghuma{
+    background-color: #EB2026;
+    color:#fff;
+}
+.btn-raghuma:hover{
+    background-color: #fff;
+    border: 1px solid #EB2026;
+    color:#EB2026;
+}
+.box-shadow{
+    box-shadow: 1px 1px 8px #111;
+}
+.card-shadow{
+    box-shadow: 1px 1px 8px #aaa;
+    border-radius: 5px;
+}
+.icon-bg{
+    width:150px;
+    height:150px;
+    text-align: center;
+    background-color: #eee;
+    border-radius:50%;
+    margin:auto;
+    padding-top:28px;
 }
