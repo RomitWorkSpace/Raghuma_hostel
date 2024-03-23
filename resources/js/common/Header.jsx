@@ -84,9 +84,8 @@ useEffect(() => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/products">PRODUCTS</Link></li>
-          <li><Link to="/resources">RESOURCES</Link></li>
-          <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACTORY</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li><Link to="/hostel">OUR HOSTEL</Link></li>
+          <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACILITIES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown1Visible ? 'dropdown-active' : 'dropdown-deactive'}>
               
               
@@ -106,7 +105,8 @@ useEffect(() => {
             </ul>
           </li>
 
-
+          <li><Link to="/blog">BLOG</Link></li>
+          <li><Link to="/gallery">GALLERY</Link></li>
           <li><Link to="/contact">CONTACT</Link></li>
           <li><Link to="" className="get-a-quote" href="get-a-quote.html">Get a Quote</Link></li>
         </ul>
