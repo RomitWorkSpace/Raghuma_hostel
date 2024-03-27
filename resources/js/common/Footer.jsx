@@ -58,7 +58,7 @@ UP - 201308 <br/><br/>
 
       </div>
     </div>
-
+<hr className='clr-black'/>
     <div className="container mt-4">
       <div className="copyright clr-black">
         &copy; Copyright <strong><span className='primary-clr'>LTS</span></strong>. All Rights Reserved
