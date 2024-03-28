@@ -354,7 +354,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #0000fe;
+    color: #EB2026;
   }
 
   .navbar .get-a-quote,
@@ -501,7 +501,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #0000fe;
+    color: #EB2026;
   }
 
   .navbar .get-a-quote,
@@ -1843,7 +1843,7 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #aaa;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   margin-right: 10px;
@@ -1890,14 +1890,14 @@ section {
 }
 
 .footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #111;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: #fff;
+  color: #EB2026;
 }
 
 .footer .footer-contact p {
