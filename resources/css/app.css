@@ -44,8 +44,8 @@
     border-radius: 5px;
 }
 .icon-bg{
-    width:130px;
-    height:130px;
+    width:120px;
+    height:120px;
     text-align: center;
     background-color: #eee;
     border-radius:50%;
@@ -80,7 +80,20 @@
     color:#fff;
     border-radius: 0px 0px 8px 8px;
 }
+.bg-pink{
+  background-color: #fff8f0;
+}
 
+.service-photo-bg{
+  padding:25px 18px;
+  background-color: #EB2026;
+  color: #fff;
+  text-align: center;
+}
+
+.service-photo-bg img{
+  border-radius: 8px;
+}
 
 .text-area{
     background-color: aliceblue;
@@ -91,6 +104,12 @@
     border: 1px solid #EB2026;
 }
 
+.facility-list li :before{
+  color:#009900; font-weight: 900; content: "\f058";
+}
+.facility-list ul{
+  list-style-position:outside!important;
+}
 
 
 
