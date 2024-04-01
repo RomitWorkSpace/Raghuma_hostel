@@ -12,8 +12,10 @@
     },
     "dependencies": {
         "@vitejs/plugin-react": "^4.2.1",
+        "aos": "^2.3.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-iframe": "^1.8.5",
         "react-router-dom": "^6.22.3",
         "swiper": "^11.0.7"
     }
