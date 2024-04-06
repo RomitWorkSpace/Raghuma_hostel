@@ -9,6 +9,7 @@ import Contact from '../components/pages/Contact';
 import HostelRoom from '../components/pages/HostelRoom';
 import RoomDetail from '../components/pages/RoomDetail';
 import Service from '../components/pages/Service';
+import Gallery from '../components/pages/Gallery';
 
 
 function Layout() {
@@ -21,7 +22,8 @@ function Layout() {
         <Route path="/blog" exact element={<Blog />} />
         <Route path="/hostel" exact element={<HostelRoom />} />
         <Route path="/room-detail" exact element={<RoomDetail />} />
-        <Route path="/service-detail" exact element={<Service />} />
+        <Route path='/facilities/:slug' exact element={<Service />} />
+        <Route path="/gallery" exact element={<Gallery />} />
         <Route path="/contact" exact element={<Contact />} />
     </Routes>
     <Footer />
