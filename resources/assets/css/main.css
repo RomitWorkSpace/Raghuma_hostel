@@ -526,7 +526,6 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    border: 1px solid #19335c;
   }
 
   .navbar .dropdown>.dropdown-active,
