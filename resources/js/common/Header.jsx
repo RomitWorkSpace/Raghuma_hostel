@@ -4,26 +4,43 @@ import Logo from 'imgPath/RaghumaLogo.png'
 
 
 const Header = () => {
-//   const [dropdownData, setDropdownData] = useState([]);
+  const [dropdownData, setDropdownData] = useState([]);
+  const [roomData, setRoomData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [clicked, setClicked] = useState(false);
   const [dropdown1Visible, setDropdown1Visible] = useState(false);
+  const [dropdown2Visible, setDropdown2Visible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-//   useEffect(() => {
+  useEffect(() => {
 
-//     const fetchData = async () => {
-//       try {
-//         const response = await fetch('https://tecroost.com/api/services');
-//         const data = await response.json();
-//         setDropdownData(data.services);
-//       } catch (error) {
-//         console.error('Error fetching dropdown data:', error);
-//       }
-//     };
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://brandaile.com/api/services');
+        const data = await response.json();
+        setDropdownData(data.services);
+      } catch (error) {
+        console.error('Error fetching dropdown data:', error);
+      }
+    };
 
-//     fetchData();
-//   }, []);
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+
+    const fetchRoomData = async () => {
+      try {
+        const response = await fetch('https://brandaile.com/api/rooms');
+        const data = await response.json();
+        setRoomData(data.rooms);
+      } catch (error) {
+        console.error('Error fetching dropdown data:', error);
+      }
+    };
+
+    fetchRoomData();
+  }, []);
 
 useEffect(() => {
     const handleScroll = () => {
@@ -45,9 +62,13 @@ useEffect(() => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  const toggleMainDropdown = () =>{
+  const toggleServiceDropdown = () =>{
       setDropdown1Visible(!dropdown1Visible);
   }
+
+  const toggleRoomDropdown = () =>{
+    setDropdown2Visible(!dropdown2Visible);
+}
 
   const handleNav = () =>{
     if(!clicked){
@@ -84,24 +105,25 @@ useEffect(() => {
         <ul>
           <li onClick={() => handleNav()}><Link to="/" className="active">HOME</Link></li>
           <li onClick={() => handleNav()}><Link to="/about">ABOUT</Link></li>
-          <li><Link to="/hostel">OUR HOSTEL</Link></li>
-          <li className="dropdown" onClick={() => toggleMainDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACILITIES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
-            <ul id="inner-down" className={dropdown1Visible ? 'dropdown-active' : 'dropdown-deactive'}>
-              
-              
-            
+          <li className="dropdown" onClick={() => toggleRoomDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>OUR HOSTEL</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+            <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                     
-                        {/* {dropdownData.map((dropdown, index) => (
+                        {roomData.map((room) => (
                           
-                            <li className="dropdown myList" onClick={(e) => toggleDropdown(e, index)}><Link to="#" className={activeDropdown === index? 'active' : 'hidden'}><span>{ dropdown.name }</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
-                                <ul className={activeDropdown === index? 'dropdown-active' : 'hidden'}>
-                                    <SubServiceMenu props = {dropdown.id} />
-                                </ul>
-                            </li>
-                        ))} */}
-                    
-             
-              
+                          <li><Link to={`/rooms/${room.slug}`}>{room.name}</Link></li>
+                        ))}
+
+            </ul>
+          </li>
+
+          <li className="dropdown" onClick={() => toggleServiceDropdown()}><Link to="" id="down" className={dropdown1Visible ? 'active' : 'deactive'}><span>FACILITIES</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+            <ul id="inner-down" className={dropdown1Visible ? 'dropdown-active' : 'dropdown-deactive'}>
+     
+                        {dropdownData.map((dropdown) => (
+                          
+                          <li><Link to={`/facilities/${dropdown.slug}`}>{dropdown.name}</Link></li>
+                        ))}
+
             </ul>
           </li>
 
