@@ -5,7 +5,7 @@ import Logo from 'imgPath/RaghumaLogo.png'
 
 const Header = () => {
   const [dropdownData, setDropdownData] = useState([]);
-  const [roomData, setRoomData] = useState([]);
+  const [hostelData, setHostelData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [clicked, setClicked] = useState(false);
   const [dropdown1Visible, setDropdown1Visible] = useState(false);
@@ -29,17 +29,17 @@ const Header = () => {
 
   useEffect(() => {
 
-    const fetchRoomData = async () => {
+    const fetchHostelData = async () => {
       try {
-        const response = await fetch('https://brandaile.com/api/rooms');
+        const response = await fetch('https://brandaile.com/api/hostels');
         const data = await response.json();
-        setRoomData(data.rooms);
+        setHostelData(data.hostels);
       } catch (error) {
         console.error('Error fetching dropdown data:', error);
       }
     };
 
-    fetchRoomData();
+    fetchHostelData();
   }, []);
 
 useEffect(() => {
@@ -108,9 +108,9 @@ useEffect(() => {
           <li className="dropdown" onClick={() => toggleRoomDropdown()}><Link to="" id="down" className={dropdown2Visible ? 'active' : 'deactive'}><span>OUR HOSTEL</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul id="inner-down" className={dropdown2Visible ? 'dropdown-active' : 'dropdown-deactive'}>
                     
-                        {roomData.map((room) => (
+                        {hostelData.map((hostel) => (
                           
-                          <li><Link to={`/rooms/${room.slug}`}>{room.name}</Link></li>
+                          <li><Link to={`/hostels/${hostel.slug}`}>{hostel.title}</Link></li>
                         ))}
 
             </ul>
