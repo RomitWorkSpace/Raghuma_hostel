@@ -20,7 +20,7 @@ function Layout() {
         <Route path="/" exact element={<Home/>} />
         <Route path="/about" exact element={<About/>} />
         <Route path="/blog" exact element={<Blog />} />
-        <Route path="/hostel" exact element={<HostelRoom />} />
+        <Route path="/hostels/:slug" exact element={<HostelRoom />} />
         <Route path="/room-detail" exact element={<RoomDetail />} />
         <Route path='/facilities/:slug' exact element={<Service />} />
         <Route path="/gallery" exact element={<Gallery />} />
