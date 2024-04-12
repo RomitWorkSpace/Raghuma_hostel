@@ -110,7 +110,7 @@ useEffect(() => {
                     
                         {hostelData.map((hostel) => (
                           
-                          <li><Link to={`/hostels/${hostel.slug}`}>{hostel.title}</Link></li>
+                          <li onClick={() => handleNav()}><Link to={`/hostels/${hostel.slug}`}>{hostel.title}</Link></li>
                         ))}
 
             </ul>
@@ -121,16 +121,16 @@ useEffect(() => {
      
                         {dropdownData.map((dropdown) => (
                           
-                          <li><Link to={`/facilities/${dropdown.slug}`}>{dropdown.name}</Link></li>
+                          <li onClick={() => handleNav()}><Link to={`/facilities/${dropdown.slug}`}>{dropdown.name}</Link></li>
                         ))}
 
             </ul>
           </li>
 
-          <li><Link to="/blog">BLOG</Link></li>
-          <li><Link to="/gallery">GALLERY</Link></li>
-          <li><Link to="/contact">CONTACT</Link></li>
-          <li><Link to="" className="get-a-quote" href="get-a-quote.html">Get a Quote</Link></li>
+          <li onClick={() => handleNav()}><Link to="/blog">BLOG</Link></li>
+          <li onClick={() => handleNav()}><Link to="/gallery">GALLERY</Link></li>
+          <li onClick={() => handleNav()}><Link to="/contact">CONTACT</Link></li>
+          <li><Link to="/contact" className="get-a-quote" href="get-a-quote.html">Get a Quote</Link></li>
         </ul>
       </nav>
 
