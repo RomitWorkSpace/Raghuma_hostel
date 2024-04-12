@@ -11,8 +11,11 @@ function AboutBottom() {
                 <div className='row align-items-center'>
                     <div className='col-md-1'></div>
                     <div className='col-md-5 text-justify'>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <h4 className='primary-clr bold'>Our Commitments</h4>
+                        <p>At Raghuma Hostel, we are committed to providing exceptional hospitality and creating a welcoming environment where customers from all walks of life can come together to share experiences and create lasting memories. Whether you're exploring the city, embarking on outdoor adventures, or simply seeking a comfortable place to unwind, our hostel is the perfect choice for your next getaway.</p>
+
+                        <h4 className='primary-clr bold'>Book Your Stay</h4>
+                        <p>Experience the best of hospitality at Raghuma Hostel. Book your stay with us today and discover why we're the preferred choice for customers seeking comfort, convenience, and community. Your adventure starts here!</p>
                     </div>
                     <div className='col-md-6'>
                         <img src={ Girl } width="100%" alt="hostel" />
