@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-fade';
-import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 function TestimonialSection() {
     return (
@@ -18,7 +18,7 @@ function TestimonialSection() {
         <Swiper
                 slidesPerView={1}
                 effect={'fade'}
-                modules={[Pagination, Autoplay, EffectFade]}
+                modules={[Pagination, Autoplay]}
                 loop={true}
                 autoplay={{delay: 4000,
                 disableOnInteraction: false}}
