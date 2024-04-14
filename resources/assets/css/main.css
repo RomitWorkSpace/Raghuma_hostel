@@ -359,10 +359,10 @@ section {
 
   .navbar .get-a-quote,
   .navbar .get-a-quote:focus {
-    background: var(--color-primary);
+    background: #EB2026;
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 4px;
+    border-radius: 20px;
     color: #fff;
   }
 
@@ -506,9 +506,9 @@ section {
 
   .navbar .get-a-quote,
   .navbar .get-a-quote:focus {
-    background: var(--color-primary);
+    background: #EB2026;
     padding: 8px 20px;
-    border-radius: 4px;
+    border-radius: 20px;
     margin: 15px;
     color: #fff;
   }
