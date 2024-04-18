@@ -87,7 +87,7 @@ useEffect(() => {
     <div className='container-fluid header-top p-2' style={{backgroundColor:'#EB2026', color:'#fff'}}>
         <div className='container'>
             <div className='row'>
-                <div className='col-md-4'>9315312530 | raghumahostel@gmail.com</div>
+                <div className='col-md-4' style={{fontSize:'15px'}}><i className="fa-solid fa-phone"></i> 9315312530 | <i class="fa-regular fa-envelope"></i> raghumahostel@gmail.com</div>
             </div>
         </div>
     </div>
