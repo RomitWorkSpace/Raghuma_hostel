@@ -11,6 +11,7 @@ import RoomDetail from '../components/pages/RoomDetail';
 import Service from '../components/pages/Service';
 import Gallery from '../components/pages/Gallery';
 import LandingPage from '../components/pages/LandingPage';
+import BlogDetail from '../components/pages/BlogDetail';
 
 
 function Layout() {
@@ -24,6 +25,7 @@ function Layout() {
         <Route path="/hostels/:slug" exact element={<HostelRoom />} />
         <Route path="/room-detail" exact element={<RoomDetail />} />
         <Route path='/facilities/:slug' exact element={<Service />} />
+        <Route path='/blogs/:slug' exact element={<BlogDetail />} />
         <Route path="/gallery" exact element={<Gallery />} />
         <Route path="/contact" exact element={<Contact />} />
         <Route path="/register-now" exact element={<LandingPage />} />
