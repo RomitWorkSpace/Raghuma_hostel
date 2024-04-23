@@ -13,15 +13,15 @@ function FeatureSection() {
                         <div className='about-feature pl-5'>
                             <div className="feature text-justify">
                                <h3 className='primary-clr ml-63'><i className="fa-solid fa-circle mr-3"></i>4 Times Food</h3>
-                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                               <p>Our dedicated kitchen staff works tirelessly to ensure that every meal is not just a necessity but an experience to savor. </p>
                             </div>
                             <div className="feature text-justify">
-                               <h3 className='primary-clr ml-63'><i className="fa-solid fa-circle mr-3"></i>24*7 Electricity</h3>
-                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                               <h3 className='primary-clr ml-63'><i className="fa-solid fa-circle mr-3"></i>Wifi Unlimited</h3>
+                               <p>Say goodbye to buffering and slow loading times. Our robust wifi network delivers lightning-fast speeds, allowing you to browse.</p>
                             </div>
                             <div className="feature text-justify">
-                               <h3 className='primary-clr ml-63'><i className="fa-solid fa-circle mr-3"></i>Transportation</h3>
-                               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                               <h3 className='primary-clr ml-63'><i className="fa-solid fa-circle mr-3"></i>Laundry</h3>
+                               <p>Forget about wasting precious time on sorting, washing and folding – let us handle the dirty work while you focus on what matters most.</p>
                             </div>
                         </div>
                     </div>
