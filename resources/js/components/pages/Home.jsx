@@ -6,6 +6,7 @@ import GallerySection from '../HomeComponents/GallerySection'
 import TestimonialSection from '../HomeComponents/TestimonialSection'
 import NewsLetterSection from '../HomeComponents/NewsLetterSection'
 import MainSlider from '../HomeComponents/MainSlider'
+import BookingForm from '../HomeComponents/BookingForm'
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
         <AboutSection />
         <HostelSection />
         <FacilitySection />
+        <BookingForm />
         <GallerySection />
         <TestimonialSection />
         <NewsLetterSection />
