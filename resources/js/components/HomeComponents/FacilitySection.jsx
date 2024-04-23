@@ -8,12 +8,12 @@ import Power from 'imgPath/power.png'
 import FacilityCard from './FacilityCard';
 
 function FacilitySection() {
-    const Facility1 = {icon: FoodIcon, facility: '4 Times Food'};
-    const Facility2 = {icon: WifiIcon, facility: 'WiFi Unlimited'};
-    const Facility3 = {icon: TransportIcon, facility: 'Transportation'};
-    const Facility4 = {icon: Gym, facility: 'Gyms'};
-    const Facility5 = {icon: Laundry, facility: 'Laundry'};
-    const Facility6 = {icon: Power, facility: 'Power Backup'};
+    const Facility1 = {icon: FoodIcon, facility: '4 Times Food', link: '/facilities/4-times-food'};
+    const Facility2 = {icon: WifiIcon, facility: 'WiFi Unlimited', link: '/facilities/wifi-unlimited'};
+    const Facility3 = {icon: TransportIcon, facility: 'Transportation', link: '/facilities/transportation'};
+    const Facility4 = {icon: Gym, facility: 'Gyms', link: '/facilities/gyms'};
+    const Facility5 = {icon: Laundry, facility: 'Laundry', link: '/facilities/laundry'};
+    const Facility6 = {icon: Power, facility: 'Power Backup', link: '/facilities/power-backup'};
     return (
         <>
         <div className='container-fluid p-5 bg-raghuma'>
