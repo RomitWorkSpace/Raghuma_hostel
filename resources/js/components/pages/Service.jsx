@@ -21,14 +21,14 @@ function Service({item}) {
         {service.map((item) => (
             <>
             <div className='container-fluid p-0'>
-                <img src={`https://brandaile.com/public/images/banners/${item.banner}`} alt="banner" width="100%"/>
+                <img src={`/public/images/banners/${item.banner}`} alt="banner" width="100%"/>
             </div>
           <div key={item.id} className='container text-center pt-5 pb-4'>
             <div className='row'>
             <div className='col-md-5 mb-4'>
                 <div className='service-photo-bg'>
                     <h4 className='bold mb-4'>100% HYGIENIC AND HEALTHY</h4>
-                    <img src={'https://brandaile.com/public/images/services/'+item.image} alt="service" width="100%" />
+                    <img src={'/public/images/services/'+item.image} alt="service" width="100%" />
                 </div>
             </div>
             <div className='col-md-1'></div>
