@@ -28,7 +28,7 @@ function BlogDetail({item}) {
             <div className='row'>
             <div className='col-md-5 mb-4'>
                 <div className='service-photo-bg'>
-                    <img src={'https://brandaile.com/public/images/blogs/'+item.image} alt="service" width="100%" />
+                    <img src={'/public/images/blogs/'+item.image} alt="service" width="100%" />
                 </div>
             </div>
             <div className='col-md-1'></div>
