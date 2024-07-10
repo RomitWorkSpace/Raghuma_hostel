@@ -16,7 +16,7 @@ const Header = () => {
 
     const fetchData = async () => {
       try {
-        const response = await fetch('https://brandaile.com/api/services');
+        const response = await fetch('/api/services');
         const data = await response.json();
         setDropdownData(data.services);
       } catch (error) {
@@ -31,7 +31,7 @@ const Header = () => {
 
     const fetchHostelData = async () => {
       try {
-        const response = await fetch('https://brandaile.com/api/hostels');
+        const response = await fetch('/api/hostels');
         const data = await response.json();
         setHostelData(data.hostels);
       } catch (error) {
