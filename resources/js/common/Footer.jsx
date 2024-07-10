@@ -57,11 +57,11 @@ UP - 201310 <br/><br/>
 <hr className='clr-black'/>
     <div className="container mt-4">
       <div className="copyright clr-black">
-        &copy; Copyright <strong><span className='primary-clr'>Raghuma Hostel</span></strong>. All Rights Reserved
+        &copy; Copyright @ 2024<strong> <span className='primary-clr'>Raghuma Hostel</span></strong>. All Rights Reserved
       </div>
       <div className="credits clr-black">
 
-        Designed by <a href="https://livetechservices.in" className="primary-clr">LTS</a>
+        Designed and Developed by <a href="https://livetechservices.in" className="primary-clr">LTS</a>
       </div>
     </div>
 
