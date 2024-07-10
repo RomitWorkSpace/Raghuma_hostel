@@ -29,7 +29,7 @@ function GallerySection() {
             <>
                 <div className='col-md-4 mb-4'>
                     <div className='photo-bg'>
-                    <img src={`https://brandaile.com/public/images/photos/${item.image}`} alt="service" width="100%" />
+                    <img src={`images/photos/${item.image}`} alt="service" width="100%" />
                     </div>
                 </div>
             </>
