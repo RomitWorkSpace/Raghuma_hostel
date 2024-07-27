@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import Iframe from 'react-iframe'
 import ContactBanner from 'imgPath/banners/contact-banner.jpeg'
 import ContactForm from '../ContactComponents/ContactForm'
@@ -6,6 +7,11 @@ import ContactForm from '../ContactComponents/ContactForm'
 function Contact() {
     return (
         <>
+        <Helmet>
+            <title>Contact Us - Raghuma Hostel | Boys Hostel in Greater Noida</title>
+            <meta name="keywords" content="AC Room hostel in greater noida,Best AC Room hostel in knowlege park 3,top AC Room hostel in greater noida,Boys hostel in knowlege park 3" />
+            <meta name="description" content="Connect with Raghuma Hostel effortlessly through our Contact Us page. Whether you have inquiries about our facilities, booking information.." />
+        </Helmet>
         <div className='container-fluid p-0'>
             <img src={ ContactBanner } width="100%" alt="contact" />
         </div>
